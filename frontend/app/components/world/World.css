@@ -1,0 +1,8 @@
+.canvas-wrapper {
+  position: absolute;
+  width: 130vw;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+  transition: left 1s ease; /* 👈 animate the shift */
+}

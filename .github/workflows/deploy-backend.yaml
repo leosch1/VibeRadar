@@ -1,0 +1,66 @@
+name: Deploy Backend
+
+on:
+  push:
+    paths:
+      - "backend/api/**"
+      - ".github/workflows/deploy-backend.yaml"
+    branches:
+      - main
+
+env:
+  AWS_REGION: eu-central-1
+
+jobs:
+  deploy:
+    name: Build and Deploy API to ECS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Initialize Terraform
+        working-directory: ./terraform
+        run: terraform init -input=false
+
+      - name: Extract ECR Repository URL from Terraform outputs
+        working-directory: ./terraform
+        run: |
+          echo "REPO_URI=$(terraform output -raw api_image_repository_url)" >> $GITHUB_ENV
+
+      - name: Login to Amazon ECR
+        run: |
+          aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $REPO_URI
+
+      - name: Build and Push Docker Image
+        run: |
+          SHORT_SHA=$(echo $GITHUB_SHA | cut -c1-7)
+          IMAGE_TAG=$SHORT_SHA
+          echo "Going to build image: $REPO_URI:$IMAGE_TAG"
+          docker build -t $REPO_URI:$IMAGE_TAG ./backend/api
+          docker tag $REPO_URI:$IMAGE_TAG $REPO_URI:latest
+          docker push $REPO_URI:$IMAGE_TAG
+          docker push $REPO_URI:latest
+          echo "API_IMAGE_URL=$REPO_URI:$IMAGE_TAG" >> $GITHUB_ENV
+
+      - name: Apply Terraform with updated ECS image
+        working-directory: ./terraform
+        run: |
+          terraform apply \
+            -input=false \
+            -target=aws_ecs_task_definition.api \
+            -target=aws_ecs_service.api \
+            -auto-approve \
+            -var="api_image_url=$API_IMAGE_URL" \
+            -var="posthog_api_key=${{ secrets.POSTHOG_API_KEY }}"

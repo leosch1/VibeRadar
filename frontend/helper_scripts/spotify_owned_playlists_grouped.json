@@ -1,0 +1,1156 @@
+{
+  "GLOBAL": {
+    "lat": null,
+    "lng": null,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Global",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+      },
+      {
+        "playlist_name": "Top Songs - Global",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF"
+      },
+      {
+        "playlist_name": "Viral 50 - Global",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLiRSasKsNU9"
+      }
+    ]
+  },
+  "Other": {
+    "lat": null,
+    "lng": null,
+    "playlists": [
+      {
+        "playlist_name": "Today’s Top Hits",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+      },
+      {
+        "playlist_name": "Top 50 - USA",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp"
+      },
+      {
+        "playlist_name": "Top 50 - Turkey",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIVYVBNw9D5K"
+      },
+      {
+        "playlist_name": "Country Top 50",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX7aUUBCKwo4Y"
+      },
+      {
+        "playlist_name": "Top Hits of 2003",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DXaW8fzPh9b08"
+      },
+      {
+        "playlist_name": "Top Songs - USA",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI"
+      },
+      {
+        "playlist_name": "Top Songs - Turkey",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJARRcHjHcAr"
+      },
+      {
+        "playlist_name": "Top 50 - Czech Republic",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIP3c3fqVrJY"
+      },
+      {
+        "playlist_name": "Viral 50 - Turkey",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMIJZxwqzod6"
+      },
+      {
+        "playlist_name": "Viral 50 - USA",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKuaTI1Z1Afx"
+      },
+      {
+        "playlist_name": "Top Songs - Czech Republic",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLKI6MPixefZ"
+      },
+      {
+        "playlist_name": "Top 50 - UAE",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbM4UZuIrvHvA"
+      },
+      {
+        "playlist_name": "Top 50 - UAE",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbM4UZuIrvHvA"
+      }
+    ]
+  },
+  "CH": {
+    "lat": 47,
+    "lng": 8,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJiyhoAPEfMK"
+      },
+      {
+        "playlist_name": "New Music Friday Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX3crNbt46mRU"
+      },
+      {
+        "playlist_name": "Top Songs - Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKx6qX9uN66j"
+      },
+      {
+        "playlist_name": "Top Tracks 2024 Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX4HGSmd79ENf"
+      },
+      {
+        "playlist_name": "Schwiizrap",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX1axYuQ4oR2e"
+      },
+      {
+        "playlist_name": "Viral 50 - Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNjqq6Tw4Fb0"
+      },
+      {
+        "playlist_name": "Top Artists 2024 Switzerland",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX8B5NTBOzwiA"
+      }
+    ]
+  },
+  "FR": {
+    "lat": 46,
+    "lng": 2,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - France",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIPWwFssbupI"
+      },
+      {
+        "playlist_name": "Top Songs - France",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKQ1ogMOyW9N"
+      },
+      {
+        "playlist_name": "Viral 50 - France",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJmRv5TqJW16"
+      }
+    ]
+  },
+  "IT": {
+    "lat": 42.83333333,
+    "lng": 12.83333333,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Italy",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIQnj7RRhdSX"
+      },
+      {
+        "playlist_name": "Hot Hits Italia",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX6wfQutivYYr"
+      },
+      {
+        "playlist_name": "Top Songs - Italy",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJUPkgaWZcWG"
+      },
+      {
+        "playlist_name": "Viral 50 - Italy",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKbvcwe5owJ1"
+      },
+      {
+        "playlist_name": "Top Tracks Italia 2024",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWUJcZpQ1337Z"
+      },
+      {
+        "playlist_name": "Top Artists Italia 2024",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX3x5VLlIPP5M"
+      }
+    ]
+  },
+  "DE": {
+    "lat": 51,
+    "lng": 9,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Germany",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJiZcmkrIHGU"
+      },
+      {
+        "playlist_name": "Hot Hits Deutschland",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX4jP4eebSWR9"
+      },
+      {
+        "playlist_name": "Top Songs - Germany",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbK8BKKMArIyl"
+      },
+      {
+        "playlist_name": "Viral 50 - Germany",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNv6cjoMVCyg"
+      }
+    ]
+  },
+  "ES": {
+    "lat": 40,
+    "lng": -4,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Spain",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNFJfN1Vw8d9"
+      },
+      {
+        "playlist_name": "Éxitos España",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DXaxEKcoCdWHD"
+      },
+      {
+        "playlist_name": "Top Songs - Spain",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJwoKy8qKpHG"
+      },
+      {
+        "playlist_name": "Viral 50 - Spain",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMfVLvbaC3bj"
+      }
+    ]
+  },
+  "PT": {
+    "lat": 39.5,
+    "lng": -8,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Portugal",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKyJS56d1pgi"
+      },
+      {
+        "playlist_name": "Viral 50 - Portugal",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKHoaIcElSSA"
+      }
+    ]
+  },
+  "BR": {
+    "lat": -10,
+    "lng": -55,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Brazil",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMXbN3EUUhlg"
+      },
+      {
+        "playlist_name": "Top Songs - Brazil",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKzoK95AbRy9"
+      },
+      {
+        "playlist_name": "Viral 50 - Brazil",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMOkSwG072hV"
+      }
+    ]
+  },
+  "GB": {
+    "lat": 54,
+    "lng": -2,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - United Kingdom",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLnolsZ8PSNw"
+      },
+      {
+        "playlist_name": "Top Songs - United Kingdom",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMwmF30ppw50"
+      },
+      {
+        "playlist_name": "Viral 50 - United Kingdom",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbL3DLHfQeDmV"
+      }
+    ]
+  },
+  "CO": {
+    "lat": 4,
+    "lng": -72,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Colombia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbOa2lmxNORXQ"
+      },
+      {
+        "playlist_name": "Top Songs - Colombia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbL1Fl8vdBUba"
+      },
+      {
+        "playlist_name": "Viral 50 - Colombia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKrooeK9WSFF"
+      }
+    ]
+  },
+  "KR": {
+    "lat": 37,
+    "lng": 127.5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - South Korea",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNxXF4SkHj9F"
+      },
+      {
+        "playlist_name": "Top Songs - South Korea",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJZGli0rRP3r"
+      }
+    ]
+  },
+  "AR": {
+    "lat": -34,
+    "lng": -64,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Argentina",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMMy2roB9myp"
+      },
+      {
+        "playlist_name": "Top Songs - Argentina",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKPTKrnFPD0G"
+      },
+      {
+        "playlist_name": "Viral 50 - Argentina",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJajpaXyaKll"
+      }
+    ]
+  },
+  "MX": {
+    "lat": 23,
+    "lng": -102,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Mexico",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbO3qyFxbkOE1"
+      },
+      {
+        "playlist_name": "Top Songs - Mexico",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKUoIkUXteF6"
+      }
+    ]
+  },
+  "SE": {
+    "lat": 62,
+    "lng": 15,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Sweden",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLoATJ81JYXz"
+      },
+      {
+        "playlist_name": "Hot Hits Sweden",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWTMYgB8TqtmR"
+      },
+      {
+        "playlist_name": "Top Songs - Sweden",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKVvfnL1Us06"
+      },
+      {
+        "playlist_name": "Viral 50 - Sweden",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIPOivNiyjjS"
+      }
+    ]
+  },
+  "NL": {
+    "lat": 52.5,
+    "lng": 5.75,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Netherlands",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKCF6dqVpDkS"
+      },
+      {
+        "playlist_name": "Top 50 - Finland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMxcczTSoGwZ"
+      },
+      {
+        "playlist_name": "Hot Hits NL",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWSBi5svWQ9Nk"
+      },
+      {
+        "playlist_name": "Top Songs - Netherlands",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbK4BFAukDzj3"
+      },
+      {
+        "playlist_name": "Top Songs - Finland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJQ9kF73GOT2"
+      },
+      {
+        "playlist_name": "Viral 50 - Netherlands",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMQaPQjt027d"
+      }
+    ]
+  },
+  "JP": {
+    "lat": 36,
+    "lng": 138,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Japan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKXQ4mDTEBXq"
+      },
+      {
+        "playlist_name": "Top Songs - Japan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKqiTGXuCOsB"
+      },
+      {
+        "playlist_name": "Viral 50 - Japan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbINTEnbFeb8d"
+      }
+    ]
+  },
+  "MA": {
+    "lat": 32,
+    "lng": -5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Morocco",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJU9eQpX8gPT"
+      },
+      {
+        "playlist_name": "Hot Hits Morocco",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWYHO8PTSQ9fM"
+      },
+      {
+        "playlist_name": "Top Songs - Morocco",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNM8vS9cIqAG"
+      },
+      {
+        "playlist_name": "Viral 50 - Morocco",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIVezQItttaL"
+      }
+    ]
+  },
+  "PL": {
+    "lat": 52,
+    "lng": 20,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Poland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbN6itCcaL3Tt"
+      },
+      {
+        "playlist_name": "Top Songs - Poland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMZ5PAcNTDXd"
+      }
+    ]
+  },
+  "IL": {
+    "lat": 31.47,
+    "lng": 35.13,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Israel",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJ6IpvItkve3"
+      },
+      {
+        "playlist_name": "Viral 50 - Israel",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNGlbFNNXxgC"
+      },
+      {
+        "playlist_name": "Top Songs - Israel",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJ5J1TrbkAF9"
+      }
+    ]
+  },
+  "GR": {
+    "lat": 39,
+    "lng": 22,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Greece",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJqdarpmTJDL"
+      },
+      {
+        "playlist_name": "Viral 50 - Greece",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLOov4J0GutU"
+      }
+    ]
+  },
+  "CR": {
+    "lat": 10,
+    "lng": -84,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Costa Rica",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMZAjGMynsQX"
+      },
+      {
+        "playlist_name": "Viral 50 - Costa Rica",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKOefHPXPMyf"
+      }
+    ]
+  },
+  "DM": {
+    "lat": 15.41666666,
+    "lng": -61.33333333,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Dominican Republic",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKAbrMR8uuf7"
+      },
+      {
+        "playlist_name": "Top Songs - Dominican Republic",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMPoK06pe7d6"
+      },
+      {
+        "playlist_name": "Viral 50 - Dominican Republic",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJWZV7aRNQck"
+      }
+    ]
+  },
+  "NO": {
+    "lat": 62,
+    "lng": 10,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Norway",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJvfa0Yxg7E7"
+      },
+      {
+        "playlist_name": "Top Songs - Norway",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLWYFZ5CkSvr"
+      },
+      {
+        "playlist_name": "Top Songs - Norway",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLWYFZ5CkSvr"
+      }
+    ]
+  },
+  "AT": {
+    "lat": 47.33333333,
+    "lng": 13.33333333,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Austria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKNHh6NIXu36"
+      },
+      {
+        "playlist_name": "Top Songs - Austria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbM1EaZ0igDlz"
+      },
+      {
+        "playlist_name": "Viral 50 - Austria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKxYYIUIgn7V"
+      }
+    ]
+  },
+  "PH": {
+    "lat": 13,
+    "lng": 122,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Philippines",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNBz9cRCSFkY"
+      },
+      {
+        "playlist_name": "Top Songs - Philippines",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJVKdmjH0pON"
+      },
+      {
+        "playlist_name": "Top Songs - Philippines",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJVKdmjH0pON"
+      },
+      {
+        "playlist_name": "Viral 50 - Philippines",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJv2Mvelmc3I"
+      }
+    ]
+  },
+  "BE": {
+    "lat": 50.83333333,
+    "lng": 4,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Belgium",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJNSeeHswcKB"
+      },
+      {
+        "playlist_name": "Best of Sesame Street",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWUrIr0kH1BCb"
+      },
+      {
+        "playlist_name": "Top Songs - Belgium",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbND4ZYa46PaA"
+      },
+      {
+        "playlist_name": "Top Songs - Belarus",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLRLeF2cVSaP"
+      },
+      {
+        "playlist_name": "Top 50 - Belarus",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIYfjSLbWr4V"
+      },
+      {
+        "playlist_name": "Hot Hits BE",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX1kfybUJZB6S"
+      }
+    ]
+  },
+  "DK": {
+    "lat": 56,
+    "lng": 10,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Denmark",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbL3J0k32lWnN"
+      },
+      {
+        "playlist_name": "Top Songs - Denmark",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMw2iUtFR5Eq"
+      }
+    ]
+  },
+  "PE": {
+    "lat": -10,
+    "lng": -76,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Peru",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJfdy5b0KP7W"
+      }
+    ]
+  },
+  "IN": {
+    "lat": 20,
+    "lng": 77,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - India",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg"
+      },
+      {
+        "playlist_name": "Top Songs - India",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMWDif5SCBJq"
+      },
+      {
+        "playlist_name": "Viral 50 - India",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbK4NvPi6Sxit"
+      },
+      {
+        "playlist_name": "Top 50 - Delhi",
+        "link": "https://open.spotify.com/playlist/796ZvrF1po4LNI06bpeRrb"
+      }
+    ]
+  },
+  "NE": {
+    "lat": 16,
+    "lng": 8,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Nigeria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKY7jLzlJ11V"
+      },
+      {
+        "playlist_name": "Top 50 Nigeria",
+        "link": "https://open.spotify.com/playlist/6TxKEKTt71P0a2l4MiiPMa"
+      },
+      {
+        "playlist_name": "Top Songs - Nigeria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLw80jjcctV1"
+      }
+    ]
+  },
+  "CL": {
+    "lat": -30,
+    "lng": -71,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Chile",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbL0GavIqMTeb"
+      },
+      {
+        "playlist_name": "Top Songs - Chile",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLJ0paT1JkgZ"
+      }
+    ]
+  },
+  "AU": {
+    "lat": -27,
+    "lng": 133,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Australia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJPcfkRz0wJ0"
+      },
+      {
+        "playlist_name": "Top Songs - Australia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbK4fwx2r07XW"
+      },
+      {
+        "playlist_name": "Viral 50 - Australia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbO5MSE9RdfN2"
+      }
+    ]
+  },
+  "EG": {
+    "lat": 27,
+    "lng": 30,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Egypt",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLn7RQmT5Xv2"
+      },
+      {
+        "playlist_name": "Top Songs - Egypt",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMy2EcFg5F9m"
+      },
+      {
+        "playlist_name": "Hot Hits Egypt",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DX50MDbDwt4w8"
+      }
+    ]
+  },
+  "ZA": {
+    "lat": -29,
+    "lng": 24,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - South Africa",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMH2jvi6jvjk"
+      },
+      {
+        "playlist_name": "Top Songs - South Africa",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJV3H3OfCN1z"
+      },
+      {
+        "playlist_name": "Viral 50 - South Africa",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNaCk6h5bujZ"
+      }
+    ]
+  },
+  "CA": {
+    "lat": 60,
+    "lng": -95,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Canada",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKj23U1GF4IR"
+      },
+      {
+        "playlist_name": "Top Songs - Canada",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMda2apknTqH"
+      }
+    ]
+  },
+  "OM": {
+    "lat": 21,
+    "lng": 57,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Romania",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNZbJ6TZelCq"
+      }
+    ]
+  },
+  "TH": {
+    "lat": 15,
+    "lng": 100,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Thailand",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMnz8KIWsvf9"
+      },
+      {
+        "playlist_name": "Top Songs - Thailand",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJ7qiJCES5cj"
+      },
+      {
+        "playlist_name": "Viral 50 - Thailand",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMnf7ONzeQWM"
+      }
+    ]
+  },
+  "UA": {
+    "lat": 49,
+    "lng": 32,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Ukraine",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD"
+      },
+      {
+        "playlist_name": "Top Songs - Ukraine",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNcoJZ65xktI"
+      }
+    ]
+  },
+  "HU": {
+    "lat": 47,
+    "lng": 20,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Hungary",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNHwMxAkvmF8"
+      },
+      {
+        "playlist_name": "Top Dalok 2024",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DXbUUXU6scpfg"
+      },
+      {
+        "playlist_name": "Top Songs - Hungary",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMYsavqzfk6k"
+      }
+    ]
+  },
+  "IE": {
+    "lat": 53,
+    "lng": -8,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Ireland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKM896FDX8L1"
+      },
+      {
+        "playlist_name": "Top Songs - Ireland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJIvhIOxXxdp"
+      },
+      {
+        "playlist_name": "Top Songs - Ireland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJIvhIOxXxdp"
+      },
+      {
+        "playlist_name": "Viral 50 - Ireland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLzhUVGQUCoe"
+      }
+    ]
+  },
+  "EC": {
+    "lat": -2,
+    "lng": -77.5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Ecuador",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJlM6nvL1nD1"
+      },
+      {
+        "playlist_name": "Top Songs - Ecuador",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJPVQvqZqpcM"
+      }
+    ]
+  },
+  "BG": {
+    "lat": 43,
+    "lng": 25,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Bulgaria",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNfM2w2mq1B8"
+      }
+    ]
+  },
+  "VN": {
+    "lat": 16.16666666,
+    "lng": 107.83333333,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Vietnam",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLdGSmz6xilI"
+      }
+    ]
+  },
+  "UY": {
+    "lat": -33,
+    "lng": -56,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Uruguay",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMJJi3wgRbAy"
+      }
+    ]
+  },
+  "ID": {
+    "lat": -5,
+    "lng": 120,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Indonesia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbObFQZ3JLcXt"
+      }
+    ]
+  },
+  "LT": {
+    "lat": 56,
+    "lng": 24,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Lithuania",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMx56Rdq5lwc"
+      }
+    ]
+  },
+  "BO": {
+    "lat": -17,
+    "lng": -65,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Bolivia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJqfMFK4d691"
+      }
+    ]
+  },
+  "TW": {
+    "lat": 23.5,
+    "lng": 121,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Taiwan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMnZEatlMSiu"
+      },
+      {
+        "playlist_name": "Top Songs - Taiwan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMVY2FDHm6NN"
+      }
+    ]
+  },
+  "PY": {
+    "lat": -23,
+    "lng": -58,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Paraguay",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNOUPGj7tW6T"
+      }
+    ]
+  },
+  "HK": {
+    "lat": 22.267,
+    "lng": 114.188,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Hong Kong",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLwpL8TjsxOG"
+      },
+      {
+        "playlist_name": "Top Songs - Hong Kong",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMdvweCgpBAe"
+      },
+      {
+        "playlist_name": "Viral 50 - Hong Kong",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKXd6qahcpCg"
+      }
+    ]
+  },
+  "NZ": {
+    "lat": -41,
+    "lng": 174,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - New Zealand",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbM8SIrkERIYl"
+      },
+      {
+        "playlist_name": "Top Songs - New Zealand",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbIWlLQoMVEFp"
+      }
+    ]
+  },
+  "SK": {
+    "lat": 48.66666666,
+    "lng": 19.5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Slovakia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKIVTPX9a2Sb"
+      },
+      {
+        "playlist_name": "Top Songs - Slovakia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbMwW10JmAnzE"
+      }
+    ]
+  },
+  "GT": {
+    "lat": 15.5,
+    "lng": -90.25,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Guatemala",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLy5tBFyQvd4"
+      },
+      {
+        "playlist_name": "Top Songs - Guatemala",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJHSzlHx2ZJU"
+      }
+    ]
+  },
+  "NG": {
+    "lat": 10,
+    "lng": 8,
+    "playlists": [
+      {
+        "playlist_name": "Hot Hits Naija",
+        "link": "https://open.spotify.com/playlist/37i9dQZF1DWZCOSaet9tpB"
+      }
+    ]
+  },
+  "IS": {
+    "lat": 65,
+    "lng": -18,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Iceland",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKMzVsSGQ49S"
+      }
+    ]
+  },
+  "SV": {
+    "lat": 13.83333333,
+    "lng": -88.91666666,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - El Salvador",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLxoIml4MYkT"
+      }
+    ]
+  },
+  "NI": {
+    "lat": 13,
+    "lng": -85,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Nicaragua",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbISk8kxnzfCq"
+      }
+    ]
+  },
+  "LU": {
+    "lat": 49.75,
+    "lng": 6.16666666,
+    "playlists": [
+      {
+        "playlist_name": "Viral 50 - Luxembourg",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJ9SRaVj0yDF"
+      },
+      {
+        "playlist_name": "Top 50 - Luxembourg",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKGcyg6TFGx6"
+      }
+    ]
+  },
+  "HN": {
+    "lat": 15,
+    "lng": -86.5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Honduras",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJp9wcIM9Eo5"
+      }
+    ]
+  },
+  "KZ": {
+    "lat": 48,
+    "lng": 68,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Kazakhstan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbM472oKPNKzS"
+      },
+      {
+        "playlist_name": "Top Songs - Kazakhstan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLeBcWrdps2V"
+      }
+    ]
+  },
+  "PK": {
+    "lat": 30,
+    "lng": 70,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Pakistan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJkgIdfsJyTw"
+      },
+      {
+        "playlist_name": "Top Songs - Pakistan",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNy9tB5elXf1"
+      }
+    ]
+  },
+  "MY": {
+    "lat": 2.5,
+    "lng": 112.5,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Malaysia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJlfUljuZExa"
+      },
+      {
+        "playlist_name": "Top Songs - Malaysia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbKcS4rq3mEhp"
+      }
+    ]
+  },
+  "EE": {
+    "lat": 59,
+    "lng": 26,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Estonia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbLesry2Qw2xS"
+      }
+    ]
+  },
+  "SG": {
+    "lat": 1.36666666,
+    "lng": 103.8,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Singapore",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbK4gjvS1FjPY"
+      },
+      {
+        "playlist_name": "Top Songs - Singapore",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbN66FupT0MuX"
+      }
+    ]
+  },
+  "PA": {
+    "lat": 9,
+    "lng": -80,
+    "playlists": [
+      {
+        "playlist_name": "Top Songs - Panama",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNSiWnkYnziz"
+      },
+      {
+        "playlist_name": "Top Songs - Panama",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNSiWnkYnziz"
+      }
+    ]
+  },
+  "VE": {
+    "lat": 8,
+    "lng": -66,
+    "playlists": [
+      {
+        "playlist_name": "Top Songs - Venezuela",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbNvXzC8A6ysJ"
+      }
+    ]
+  },
+  "AF": {
+    "lat": 33,
+    "lng": 65,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Afghanistan",
+        "link": "https://open.spotify.com/playlist/1m7Ov4UeE0XYD2P82Qnt8B"
+      }
+    ]
+  },
+  "LV": {
+    "lat": 57,
+    "lng": 25,
+    "playlists": [
+      {
+        "playlist_name": "Top 50 - Latvia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbJWuzDrTxbKS"
+      }
+    ]
+  },
+  "DO": {
+    "lat": 19,
+    "lng": -70.66666666,
+    "playlists": [
+      {
+        "playlist_name": "Top 50: La República Dominicana",
+        "link": "https://open.spotify.com/playlist/0stT77VpIqWJDhNErfjIbR"
+      }
+    ]
+  },
+  "SA": {
+    "lat": 25,
+    "lng": 45,
+    "playlists": [
+      {
+        "playlist_name": "Top Songs - Saudi Arabia",
+        "link": "https://open.spotify.com/playlist/37i9dQZEVXbO839WGRmpu1"
+      }
+    ]
+  }
+}

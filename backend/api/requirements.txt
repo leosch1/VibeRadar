@@ -1,0 +1,11 @@
+fastapi==0.115.12
+geopy==2.4.1
+openmeteo_requests==1.4.0
+pandas==2.2.3
+pydantic==2.11.3
+python-dotenv==1.1.0
+Requests==2.32.3
+spotipy==2.25.1
+uvicorn==0.34.0
+sqlalchemy==2.0.40
+psycopg2-binary==2.9.10
