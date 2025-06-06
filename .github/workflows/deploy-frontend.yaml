@@ -1,65 +1,65 @@
-name: Deploy Frontend
+# name: Deploy Frontend
 
-on:
-  push:
-    paths:
-      - "frontend/**"
-      - ".github/workflows/deploy-frontend.yaml"
-    branches:
-      - main
+# on:
+#   push:
+#     paths:
+#       - "frontend/**"
+#       - ".github/workflows/deploy-frontend.yaml"
+#     branches:
+#       - main
 
-env:
-  AWS_REGION: eu-central-1
+# env:
+#   AWS_REGION: eu-central-1
 
-jobs:
-  deploy:
-    name: Build and Deploy Frontend to S3 + CloudFront
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     name: Build and Deploy Frontend to S3 + CloudFront
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
+#       - name: Configure AWS credentials
+#         uses: aws-actions/configure-aws-credentials@v2
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "18"
 
-      - name: Install dependencies
-        working-directory: ./frontend
-        run: npm install
+#       - name: Install dependencies
+#         working-directory: ./frontend
+#         run: npm install
 
-      - name: Build frontend (static export)
-        working-directory: ./frontend
-        env:
-          NEXT_PUBLIC_API_BASE_URL: https://api.viberadar.io
-          NEXT_PUBLIC_POSTHOG_KEY: phc_zG2JMiLzDLpcztzeucI8U7o1Wn9T39EpYXmYnPnBceG
-          NEXT_PUBLIC_POSTHOG_HOST: https://eu.i.posthog.com
-        run: |
-          npm run build
+#       - name: Build frontend (static export)
+#         working-directory: ./frontend
+#         env:
+#           NEXT_PUBLIC_API_BASE_URL: https://api.viberadar.io
+#           NEXT_PUBLIC_POSTHOG_KEY: phc_zG2JMiLzDLpcztzeucI8U7o1Wn9T39EpYXmYnPnBceG
+#           NEXT_PUBLIC_POSTHOG_HOST: https://eu.i.posthog.com
+#         run: |
+#           npm run build
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+#       - name: Setup Terraform
+#         uses: hashicorp/setup-terraform@v3
 
-      - name: Get Terraform outputs (S3 bucket + CloudFront ID)
-        run: |
-          terraform -chdir=terraform init
-          echo "S3_BUCKET=$(terraform -chdir=terraform output -raw s3_bucket_name)" >> $GITHUB_ENV
-          echo "CLOUDFRONT_ID=$(terraform -chdir=terraform output -raw cloudfront_distribution_id)" >> $GITHUB_ENV
+#       - name: Get Terraform outputs (S3 bucket + CloudFront ID)
+#         run: |
+#           terraform -chdir=terraform init
+#           echo "S3_BUCKET=$(terraform -chdir=terraform output -raw s3_bucket_name)" >> $GITHUB_ENV
+#           echo "CLOUDFRONT_ID=$(terraform -chdir=terraform output -raw cloudfront_distribution_id)" >> $GITHUB_ENV
 
-      - name: Sync static site to S3
-        run: |
-          aws s3 sync ./frontend/out s3://$S3_BUCKET --delete
+#       - name: Sync static site to S3
+#         run: |
+#           aws s3 sync ./frontend/out s3://$S3_BUCKET --delete
 
-      - name: Invalidate CloudFront cache
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id $CLOUDFRONT_ID \
-            --paths "/*"
+#       - name: Invalidate CloudFront cache
+#         run: |
+#           aws cloudfront create-invalidation \
+#             --distribution-id $CLOUDFRONT_ID \
+#             --paths "/*"
