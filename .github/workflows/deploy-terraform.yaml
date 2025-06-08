@@ -8,6 +8,7 @@ on:
       - .github/workflows/deploy-terraform.yaml
       - terraform-new/**
       - backend-new/**
+  workflow_dispatch:
 
 jobs:
   deploy:
