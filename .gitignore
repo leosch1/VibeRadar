@@ -245,5 +245,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-# Localstack
-**/localstack/.terraform.lock.hcl
+# Lambda zips
+**/lambda_zips/

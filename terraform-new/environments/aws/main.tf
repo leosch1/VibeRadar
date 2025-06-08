@@ -12,6 +12,10 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-module "vibe-radar" {
+module "viberadar" {
   source = "../../resources"
+}
+
+output "api_url" {
+  value = module.viberadar.api_url
 }
