@@ -245,21 +245,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-### For LaTeX
-
-# LaTeX build files
-*.aux
-*.log
-*.out
-*.toc
-*.lof
-*.lot
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-*.nav
-*.snm
-*.vrb
-*.blg
-*.bbl
-*.cut
+# Localstack
+**/localstack/.terraform.lock.hcl
