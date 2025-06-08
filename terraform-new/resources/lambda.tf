@@ -21,19 +21,38 @@ resource "aws_iam_policy_attachment" "lambda_logs" {
 
 ### Lambda Function for /getVibes ###
 
+resource "null_resource" "get_vibes_build" {
+  provisioner "local-exec" {
+    command = <<EOT
+      rm -rf ${path.module}/lambda_build/get_vibes_lambda
+      mkdir -p ${path.module}/lambda_build/get_vibes_lambda
+      cp -r ../../../backend-new/lambdas/get-vibes/*.py ${path.module}/lambda_build/get_vibes_lambda/
+
+      if [ -f ../../../backend-new/lambdas/get-vibes/requirements.txt ]; then
+        pip install -r ../../../backend-new/lambdas/get-vibes/requirements.txt -t ${path.module}/lambda_build/get_vibes_lambda
+      fi
+    EOT
+  }
+
+  triggers = {
+    requirements_hash = filesha1("../../../backend-new/lambdas/get-vibes/requirements.txt")
+  }
+}
+
 data "archive_file" "get_vibes_lambda" {
+  depends_on  = [null_resource.get_vibes_build]
   type        = "zip"
-  source_dir  = "../../../backend-new/lambdas/get-vibes"
+  source_dir  = "${path.module}/lambda_build/get_vibes_lambda"
   output_path = "${path.module}/lambda_zips/get_vibes_lambda.zip"
 }
 
 resource "aws_lambda_function" "get_vibes_lambda" {
-  function_name = "get-vibes"
-  filename      = data.archive_file.get_vibes_lambda.output_path
+  function_name    = "get-vibes"
+  filename         = data.archive_file.get_vibes_lambda.output_path
   source_code_hash = data.archive_file.get_vibes_lambda.output_base64sha256
-  handler       = "handler.lambda_handler"
-  runtime       = "python3.9"
-  role          = aws_iam_role.lambda_exec.arn
+  handler          = "handler.lambda_handler"
+  runtime          = "python3.9"
+  role             = aws_iam_role.lambda_exec.arn
 }
 
 resource "aws_lambda_permission" "apigw" {
