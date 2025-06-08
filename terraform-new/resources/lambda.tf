@@ -42,9 +42,6 @@ resource "null_resource" "get_vibes_build" {
 
     # Trigger if requirements.txt changed
     requirements_hash = filesha1("../../../backend-new/lambdas/get-vibes/requirements.txt")
-
-    # Trigger if build dir is missing or empty
-    build_dir_status = length(fileset("${path.module}/lambda_bundles/get_vibes_lambda", "**")) > 0 ? "exists" : timestamp()
   }
 }
 
