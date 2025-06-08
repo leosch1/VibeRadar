@@ -246,4 +246,5 @@ override.tf.json
 terraform.rc
 
 # Lambda zips
-# **/lambda_builds/
+**/lambda_bundles/
+**/lambda_zips/

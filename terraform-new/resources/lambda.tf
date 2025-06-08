@@ -24,25 +24,34 @@ resource "aws_iam_policy_attachment" "lambda_logs" {
 resource "null_resource" "get_vibes_build" {
   provisioner "local-exec" {
     command = <<EOT
-      rm -rf ${path.module}/lambda_builds/get_vibes_lambda
-      mkdir -p ${path.module}/lambda_builds/get_vibes_lambda
-      cp -r ../../../backend-new/lambdas/get-vibes/*.py ${path.module}/lambda_builds/get_vibes_lambda/
+      rm -rf ${path.module}/lambda_bundles/get_vibes_lambda
+      mkdir -p ${path.module}/lambda_bundles/get_vibes_lambda
+      cp -r ../../../backend-new/lambdas/get-vibes/*.py ${path.module}/lambda_bundles/get_vibes_lambda/
 
       if [ -f ../../../backend-new/lambdas/get-vibes/requirements.txt ]; then
-        pip install -r ../../../backend-new/lambdas/get-vibes/requirements.txt -t ${path.module}/lambda_builds/get_vibes_lambda
+        pip install -r ../../../backend-new/lambdas/get-vibes/requirements.txt -t ${path.module}/lambda_bundles/get_vibes_lambda
       fi
     EOT
   }
 
   triggers = {
+    # Trigger if any Python files changed
+    python_files_hash = join("", [for file in fileset("../../../backend-new/lambdas/get-vibes", "*.py") :
+      filesha1("../../../backend-new/lambdas/get-vibes/${file}")]
+    )
+
+    # Trigger if requirements.txt changed
     requirements_hash = filesha1("../../../backend-new/lambdas/get-vibes/requirements.txt")
+
+    # Trigger if build dir is missing or empty
+    build_dir_status = length(fileset("${path.module}/lambda_bundles/get_vibes_lambda", "**")) > 0 ? "exists" : timestamp()
   }
 }
 
 data "archive_file" "get_vibes_lambda" {
   depends_on  = [null_resource.get_vibes_build]
   type        = "zip"
-  source_dir  = "${path.module}/lambda_builds/get_vibes_lambda"
+  source_dir  = "${path.module}/lambda_bundles/get_vibes_lambda"
   output_path = "${path.module}/lambda_zips/get_vibes_lambda.zip"
 }
 
