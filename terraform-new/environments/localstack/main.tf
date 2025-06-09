@@ -19,6 +19,9 @@ provider "aws" {
     lambda     = "http://localhost:4566"
     dynamodb   = "http://localhost:4566"
     apigateway = "http://localhost:4566"
+    sts        = "http://localhost:4566"
+    cloudwatch = "http://localhost:4566"
+    logs       = "http://localhost:4566"
   }
 }
 

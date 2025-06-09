@@ -50,7 +50,7 @@ resource "aws_api_gateway_integration" "get_vibes_integration" {
   http_method             = aws_api_gateway_method.get_vibes.http_method
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
-  uri                     = aws_lambda_function.get_vibes_lambda.invoke_arn
+  uri                     = module.lambda_get_vibes.lambda_function_invoke_arn
 }
 
 ### Endpoint for /getOtherConnections ###

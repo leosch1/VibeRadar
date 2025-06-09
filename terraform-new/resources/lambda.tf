@@ -20,51 +20,23 @@ resource "aws_iam_policy_attachment" "lambda_logs" {
 }
 
 ### Lambda Function for /getVibes ###
+module "lambda_get_vibes" {
+  source  = "terraform-aws-modules/lambda/aws"
+  version = "~> 6.0"
 
-resource "null_resource" "get_vibes_build" {
-  provisioner "local-exec" {
-    command = <<EOT
-      rm -rf ${path.module}/lambda_bundles/get_vibes_lambda
-      mkdir -p ${path.module}/lambda_bundles/get_vibes_lambda
-      cp -r ../../../backend-new/lambdas/get-vibes/*.py ${path.module}/lambda_bundles/get_vibes_lambda/
+  function_name = "get-vibes"
+  handler       = "handler.lambda_handler"
+  runtime       = "python3.11"
+  source_path   = "../../../backend-new/lambdas/get-vibes"
 
-      if [ -f ../../../backend-new/lambdas/get-vibes/requirements.txt ]; then
-        pip install -r ../../../backend-new/lambdas/get-vibes/requirements.txt -t ${path.module}/lambda_bundles/get_vibes_lambda
-      fi
-    EOT
-  }
-
-  triggers = {
-    # Trigger if any Python files changed
-    python_files_hash = join("", [for file in fileset("../../../backend-new/lambdas/get-vibes", "*.py") :
-      filesha1("../../../backend-new/lambdas/get-vibes/${file}")]
-    )
-
-    # Trigger if requirements.txt changed
-    requirements_hash = filesha1("../../../backend-new/lambdas/get-vibes/requirements.txt")
-  }
-}
-
-data "archive_file" "get_vibes_lambda" {
-  depends_on  = [null_resource.get_vibes_build]
-  type        = "zip"
-  source_dir  = "${path.module}/lambda_bundles/get_vibes_lambda"
-  output_path = "${path.module}/lambda_zips/get_vibes_lambda.zip"
-}
-
-resource "aws_lambda_function" "get_vibes_lambda" {
-  function_name    = "get-vibes"
-  filename         = data.archive_file.get_vibes_lambda.output_path
-  source_code_hash = data.archive_file.get_vibes_lambda.output_base64sha256
-  handler          = "handler.lambda_handler"
-  runtime          = "python3.9"
-  role             = aws_iam_role.lambda_exec.arn
+  create_role                   = true
+  attach_cloudwatch_logs_policy = true
 }
 
 resource "aws_lambda_permission" "apigw" {
   statement_id  = "AllowAPIGatewayInvoke"
   action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.get_vibes_lambda.function_name
+  function_name = module.lambda_get_vibes.lambda_function_name
   principal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_api_gateway_rest_api.this.execution_arn}/*/POST/getVibes"
 }
