@@ -2,21 +2,41 @@ resource "aws_iam_role" "lambda_exec" {
   name = "lambda_exec_role"
 
   assume_role_policy = jsonencode({
-    Version = "2012-10-17"
+    Version = "2012-10-17",
     Statement = [{
-      Effect = "Allow"
+      Effect = "Allow",
       Principal = {
         Service = "lambda.amazonaws.com"
-      }
+      },
       Action = "sts:AssumeRole"
     }]
   })
 }
 
-resource "aws_iam_policy_attachment" "lambda_logs" {
-  name       = "lambda_logs"
-  roles      = [aws_iam_role.lambda_exec.name]
+resource "aws_iam_role_policy_attachment" "logs" {
+  role       = aws_iam_role.lambda_exec.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
+resource "aws_iam_role_policy" "dynamodb" {
+  name = "lambda-dynamodb-access"
+  role = aws_iam_role.lambda_exec.id
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [{
+      Effect = "Allow",
+      Action = [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:UpdateItem",
+        "dynamodb:DeleteItem",
+        "dynamodb:Scan",
+        "dynamodb:Query"
+      ],
+      Resource = aws_dynamodb_table.vibes.arn
+    }]
+  })
 }
 
 ### Lambda Function for /getVibes ###
