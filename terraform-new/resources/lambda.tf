@@ -1,26 +1,21 @@
-resource "aws_iam_role" "lambda_exec" {
-  name = "lambda_exec_role"
+### Lambda Function for /getVibes ###
 
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [{
-      Effect = "Allow",
-      Principal = {
-        Service = "lambda.amazonaws.com"
-      },
-      Action = "sts:AssumeRole"
-    }]
-  })
-}
+module "lambda_get_vibes" {
+  source  = "terraform-aws-modules/lambda/aws"
+  version = "~> 6.0"
 
-resource "aws_iam_role_policy_attachment" "logs" {
-  role       = aws_iam_role.lambda_exec.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  function_name = "get-vibes"
+  handler       = "handler.lambda_handler"
+  runtime       = "python3.11"
+  source_path   = "../../../backend-new/lambdas/get-vibes"
+
+  create_role                   = true
+  attach_cloudwatch_logs_policy = true
 }
 
 resource "aws_iam_role_policy" "dynamodb" {
   name = "lambda-dynamodb-access"
-  role = aws_iam_role.lambda_exec.id
+  role = module.lambda_get_vibes.lambda_role_name
 
   policy = jsonencode({
     Version = "2012-10-17",
@@ -37,21 +32,6 @@ resource "aws_iam_role_policy" "dynamodb" {
       Resource = aws_dynamodb_table.vibes.arn
     }]
   })
-}
-
-### Lambda Function for /getVibes ###
-
-module "lambda_get_vibes" {
-  source  = "terraform-aws-modules/lambda/aws"
-  version = "~> 6.0"
-
-  function_name = "get-vibes"
-  handler       = "handler.lambda_handler"
-  runtime       = "python3.11"
-  source_path   = "../../../backend-new/lambdas/get-vibes"
-
-  create_role                   = true
-  attach_cloudwatch_logs_policy = true
 }
 
 resource "aws_lambda_permission" "apigw" {
