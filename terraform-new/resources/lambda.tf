@@ -20,6 +20,7 @@ resource "aws_iam_policy_attachment" "lambda_logs" {
 }
 
 ### Lambda Function for /getVibes ###
+
 module "lambda_get_vibes" {
   source  = "terraform-aws-modules/lambda/aws"
   version = "~> 6.0"
