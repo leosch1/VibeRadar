@@ -14,10 +14,10 @@ Start Localstack to simulate AWS services locally by running:
 localstack start
 ```
 
-Go to the `terraform-new/environments/local` directory and deploy the infrastructure:
+Go to the `terraform-new/environments/localstack` directory and deploy the infrastructure:
 
 ```bash
-cd terraform-new/environments/local
+cd terraform-new/environments/localstack
 terraform init
 terraform apply
 ```
