@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import type LocationInfo from '../types/locationInfo';
+import type { LocationInfoType } from '../types/locationInfo';
 import styles from './LocationInfo.module.css'; // import the styles
 
 interface LocationInfoProps {
-  info: LocationInfo;
+  info: LocationInfoType;
 }
 
 export default function LocationInfo({ info }: LocationInfoProps) {

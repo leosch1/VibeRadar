@@ -1,4 +1,6 @@
-export default interface LocationInfo {
+export type WeatherType = "cloudy" | "sunny" | "rainy";
+
+export interface LocationInfoType {
     locationName: string;
     countryName: string;
     lat: number;
@@ -6,7 +8,7 @@ export default interface LocationInfo {
     utcOffsetSeconds: number;
     weather: {
         temperatureCelsius: number;
-        type: "cloudy" | "sunny" | "rainy";
+        type: WeatherType;
     };
     vibes: {
         spotify: {

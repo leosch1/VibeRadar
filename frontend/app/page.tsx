@@ -1,9 +1,9 @@
 "use client";
 import dynamic from "next/dynamic";
 import { useState, useMemo, useEffect, useRef } from "react";
-import { getVibe } from "./services/api";
+import { getVibeWithoutApi } from "./services/noApi";
 import LocationInfo from "./components/LocationInfo";
-import type LocationInfoType from "./types/locationInfo";
+import type { LocationInfoType } from "./types/locationInfo";
 import posthog from "posthog-js";
 
 const World = dynamic(() => import("./components/world/World").then((m) => m.World), {
@@ -27,7 +27,7 @@ export default function Home() {
       return;
     }
 
-    getVibe(selectedLocation.lat, selectedLocation.lng)
+    getVibeWithoutApi(selectedLocation.lat, selectedLocation.lng)
       .then((info) => {
         setLocationInfo(info);
 

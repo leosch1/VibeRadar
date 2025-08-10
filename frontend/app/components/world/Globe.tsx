@@ -15,7 +15,8 @@ import {
   handlePointerUp,
   handleClick,
 } from "../../utils/globeInteraction";
-import { getConnections, getMyCoordinates } from "../../services/api";
+import { getMyCoordinates } from "../../services/api";
+import { getConnectionsWithoutApi } from "../../services/noApi";
 import Connection from "../../types/connection";
 
 extend({ ThreeGlobe: ThreeGlobe });
@@ -40,24 +41,33 @@ export function Globe({ onLocationSelected, }: {
     );
   }
 
-  useEffect(() => {
-    const fetchConnections = async () => {
-      try {
-        const connections = await getConnections(
-          sessionIdRef.current,
-          myConnection?.start,
-          myConnection?.end
-        );
-        setConnections(connections);
-      } catch (error) {
-        console.error("Failed to fetch connections:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchConnections = async () => {
+  //     try {
+  //       const connections = await getConnections(
+  //         sessionIdRef.current,
+  //         myConnection?.start,
+  //         myConnection?.end
+  //       );
+  //       setConnections(connections);
+  //     } catch (error) {
+  //       console.error("Failed to fetch connections:", error);
+  //     }
+  //   };
 
-    fetchConnections();
-    const interval = setInterval(fetchConnections, 30000);
-    return () => clearInterval(interval);
-  }, [myConnection]);
+  //   fetchConnections();
+  //   const interval = setInterval(fetchConnections, 30000);
+  //   return () => clearInterval(interval);
+  // }, [myConnection]);
+
+  const fetchConnections = async () => {
+    try {
+      const connections = await getConnectionsWithoutApi();
+      setConnections(connections);
+    } catch (error) {
+      console.error("Failed to fetch connections:", error);
+    }
+  };
 
   useEffect(() => {
     if (!globeRef.current && groupRef.current) {
@@ -68,6 +78,7 @@ export function Globe({ onLocationSelected, }: {
       updateGlobeMaterial(globeRef.current);
       setGlobeInitialPosition(globeRef.current, { lat: 0, lng: 0 });
       setIsInitialized(true);
+      fetchConnections();
     }
   }, []);
 
