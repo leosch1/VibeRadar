@@ -28,18 +28,18 @@ export function Globe({ onLocationSelected, }: {
   const [connections, setConnections] = useState<Connection[]>([]);
   const [myConnection, setMyConnection] = useState<Connection | null>(null);
   const myCoordinatesRef = useRef<{ lat: number; lng: number } | null>(null);
-  const sessionIdRef = useRef<string>(generateSessionId()); // Generate sessionId once
+  // const sessionIdRef = useRef<string>(generateSessionId()); // Generate sessionId once
   const globeRef = useRef<ThreeGlobe | null>(null);
   const groupRef = useRef<Group>(null);
   const mouseDownPosition = useRef<Vector2 | null>(null);
   const { camera }: { camera: PerspectiveCamera } = useThree();
 
-  function generateSessionId(): string {
-    return (
-      Math.random().toString(36).substring(2, 15) +
-      Math.random().toString(36).substring(2, 15)
-    );
-  }
+  // function generateSessionId(): string {
+  //   return (
+  //     Math.random().toString(36).substring(2, 15) +
+  //     Math.random().toString(36).substring(2, 15)
+  //   );
+  // }
 
   // useEffect(() => {
   //   const fetchConnections = async () => {
