@@ -15,17 +15,6 @@ resource "aws_route53_record" "frontend" {
   }
 }
 
-resource "aws_route53_record" "backend" {
-  zone_id = data.aws_route53_zone.primary.zone_id
-  name    = "${var.backend_subdomain}.${var.domain_name}"
-  type    = "A"
-
-  alias {
-    name                   = aws_lb.api.dns_name
-    zone_id                = aws_lb.api.zone_id
-    evaluate_target_health = true
-  }
-}
 
 # MX Record for Improvmx
 resource "aws_route53_record" "mx1_improvmx" {

@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> The app was refactored to be frontend-only. This directory is not used anymore.
+
 # Vibe Radar API
 
 This is a simple API for the Vibe Radar project, which allows you to get the current state of the radar and update it with new data.
