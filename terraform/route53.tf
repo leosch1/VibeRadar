@@ -15,7 +15,6 @@ resource "aws_route53_record" "frontend" {
   }
 }
 
-
 # MX Record for Improvmx
 resource "aws_route53_record" "mx1_improvmx" {
   zone_id = data.aws_route53_zone.primary.zone_id

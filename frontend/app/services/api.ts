@@ -43,8 +43,6 @@ export const getOpenMeteoInfo = async (
   if (!resp.ok) throw new Error(`Weather API request failed: ${resp.status}`);
   const data = await resp.json();
 
-  console.log(data);
-
   const temp = data.current?.temperature_2m ?? 0;
   const code = data.current?.weathercode ?? 0;
   const offset = data.utc_offset_seconds ?? 0;
